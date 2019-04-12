@@ -2,7 +2,7 @@
 Free and Beautiful music player for android 
 
 
-# Developed by Kotlin and new Google Componenet
+# Developed by Kotlin-java and new Google Componenet
 
 
 sample : 
