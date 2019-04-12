@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Permissioner</string>
+    <string name="allow">Allow</string>
+    <string name="later">later</string>
+    <string name="foo_permission">Foo permission need</string>
+    <string name="foo_persmission_des">This Permission use for Reading Data From Sdcard and load in app fro showing songs list</string>
+    <string name="settings_description">select Permissions and switch on all permissions</string>
+    <string name="dontShow">don\'t show again</string>
+</resources>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~  Copyright (c)  2018 by Sina Dalvand
+  ~  All Rights Reserved.
+  ~  Licensed under the Apache License, Version 2.0 (the "License");
+  ~  All Classes & Files Created for CoolPlayer project
+  ~  This file created by LOGAN Username
+  -->
+
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/progress_toggle_circle1">
+        <shape xmlns:android="http://schemas.android.com/apk/res/android"
+            android:shape="oval">
+
+            <gradient
+                android:endColor="#FF294F"
+                android:startColor="#FF294F" />
+
+            <size
+                android:height="20dp"
+                android:width="20dp" />
+
+        </shape>
+    </item>
+
+    <item android:id="@+id/progress_toggle_circle2"
+        android:bottom="2dp"
+        android:left="2dp"
+        android:right="2dp"
+        android:top="2dp">
+        <shape android:shape="oval">
+            <solid android:color="@color/colorPrimaryDark"/>
+        </shape>
+    </item>
+
+
+    <item
+        android:id="@+id/progress_toggle_circle3"
+        android:bottom="4dp"
+        android:left="4dp"
+        android:right="4dp"
+        android:top="4dp">
+        <shape android:shape="oval">
+            <solid android:color="#FF294F"/>
+        </shape>
+    </item>
+
+</layer-list>

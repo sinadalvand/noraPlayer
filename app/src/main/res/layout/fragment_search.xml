@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~  Copyright (c)  2018 by Sina Dalvand
+  ~  All Rights Reserved.
+  ~  Licensed under the Apache License, Version 2.0 (the "License");
+  ~  All Classes & Files Created for CoolPlayer project
+  ~  This file created by LOGAN Username
+  -->
+
+<android.support.constraint.ConstraintLayout
+    android:background="#4FC9C9C9"
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+</android.support.constraint.ConstraintLayout>

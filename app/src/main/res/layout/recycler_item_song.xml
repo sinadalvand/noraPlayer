@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~  Copyright (c)  2018 by Sina Dalvand
+  ~  All Rights Reserved.
+  ~  Licensed under the Apache License, Version 2.0 (the "License");
+  ~  All Classes & Files Created for CoolPlayer project
+  ~  This file created by LOGAN Username
+  -->
+
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/landing_song_item_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="5dp"
+    app:layout_constrainedWidth="true"
+    app:layout_constraintHeight_percent="0.1">
+
+
+    <ir.sinadalvand.player.nora.view.customViews.TriangleImageview
+        android:id="@+id/landing_recycler_song_thumbnail"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="5dp"
+        android:adjustViewBounds="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintWidth_percent="0.17"
+        tools:src="@drawable/test2" />
+
+
+    <ImageView
+        android:id="@+id/landing_recycler_song_queue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="8dp"
+        android:src="@drawable/ic_queue_24dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/landing_recycler_song_options"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/landing_recycler_song_options"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="8dp"
+        android:src="@drawable/ic_more_24dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!--<TextView-->
+        <!--android:id="@+id/landing_recycler_song_title"-->
+        <!--android:layout_width="0dp"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginStart="8dp"-->
+        <!--android:layout_marginLeft="8dp"-->
+        <!--android:layout_marginTop="2dp"-->
+        <!--android:layout_marginEnd="8dp"-->
+        <!--android:layout_marginRight="8dp"-->
+        <!--android:ellipsize="end"-->
+        <!--android:maxLines="1"-->
+        <!--android:text="Come and get it"-->
+        <!--android:textSize="18sp"-->
+        <!--app:layout_constraintEnd_toStartOf="@+id/landing_recycler_song_options"-->
+        <!--app:layout_constraintStart_toEndOf="@+id/landing_recycler_song_thumbnail"-->
+        <!--app:layout_constraintTop_toTopOf="@+id/landing_recycler_song_thumbnail" />-->
+
+    <com.mursaat.extendedtextview.AnimatedGradientTextView
+        app:colors="@array/playing_colors"
+        app:simultaneousColors="4"
+        app:angle="45"
+        app:speed="1000"
+        app:orginalColor="#FFFF"
+        app:maxFPS="30"
+        android:id="@+id/landing_recycler_song_title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:text="Come and get it"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toStartOf="@+id/landing_recycler_song_options"
+        app:layout_constraintStart_toEndOf="@+id/landing_recycler_song_thumbnail"
+        app:layout_constraintTop_toTopOf="@+id/landing_recycler_song_thumbnail"
+        />
+
+
+    <TextView
+        android:alpha="0.7"
+        android:id="@+id/landing_recycler_song_artist"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:text="Selena Gomez"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toStartOf="@+id/landing_recycler_song_queue"
+        app:layout_constraintStart_toEndOf="@+id/landing_recycler_song_thumbnail"
+        app:layout_constraintTop_toBottomOf="@+id/landing_recycler_song_title" />
+
+</android.support.constraint.ConstraintLayout>

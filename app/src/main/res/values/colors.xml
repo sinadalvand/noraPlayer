@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#263749</color>
+    <color name="colorPrimaryDark">#2A3D53</color>
+    <color name="colorAccent">#D81B60</color>
+
+
+    <color name="colorbackground">#2D4059</color>
+    <!--#FF294F-->
+    <color name="secondaryBackRed">#FF294F</color>
+
+
+
+    <color name="grad1">#FFAA00</color>
+    <color name="grad2">#FF4D00</color>
+    <color name="grad3">#E21064</color>
+    <color name="grad4">#FF00AA</color>
+</resources>

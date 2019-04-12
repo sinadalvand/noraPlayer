@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="ir.sinadalvand.player.nora"> <!-- Pushe (Push notification service) permissions -->
+    <uses-sdk tools:overrideLibrary="co.ronash.pushe" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <permission android:name="ir.sinadalvand.player.nora.permission.C2D_MESSAGE"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="ir.sinadalvand.player.cool.permission.C2D_MESSAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <!-- Will remove Location Access cuse doesn't need that but used in library-->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" tools:node="remove" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:name="ir.sinadalvand.player.nora.CoolPlayer"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:ignore="GoogleAppIndexingWarning">
+        <activity android:name="ir.sinadalvand.player.nora.view.Activities.PlayerActivity">
+
+
+        </activity>
+        <activity android:name="ir.sinadalvand.player.nora.view.Activities.Test"></activity>
+        <activity android:name="ir.sinadalvand.player.nora.view.Activities.SplashActivity"></activity>
+        <activity
+            android:name="ir.sinadalvand.player.nora.view.Activities.LandingActivity"
+            android:windowSoftInputMode="adjustPan">
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+        </activity> <!-- Pushe (Push notification service) Configs -->
+        <receiver android:name="co.ronash.pushe.receiver.UpdateReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_REPLACED" />
+
+                <data
+                    android:path="ir.sinadalvand.player.cool"
+                    android:scheme="package" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="com.google.android.gms.gcm.GcmReceiver"
+            android:exported="true"
+            android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+                <action android:name="com.google.android.c2dm.intent.REGISTRATION" />
+
+                <category android:name="ir.sinadalvand.player.cool" />
+            </intent-filter>
+        </receiver>
+
+        <meta-data
+            android:name="co.ronash.pushe.token"
+            android:value="PUSHE_296400398553" />
+        <meta-data
+            android:name="co.ronash.pushe.cr"
+            android:value="Tm9uZQ==" />
+    </application>
+
+</manifest>

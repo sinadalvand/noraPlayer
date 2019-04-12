@@ -1,0 +1,22 @@
+<!--
+  ~  Copyright (c)  2018 by Sina Dalvand
+  ~  All Rights Reserved.
+  ~  Licensed under the Apache License, Version 2.0 (the "License");
+  ~  All Classes & Files Created for CoolPlayer project
+  ~  This file created by LOGAN Username
+  -->
+
+<vector android:height="30dp" android:viewportHeight="29.504"
+    android:viewportWidth="28.455" android:width="30dp"
+    xmlns:aapt="http://schemas.android.com/aapt" xmlns:android="http://schemas.android.com/apk/res/android">
+    <path android:pathData="M8.74,29.504C12.889,29.614 18.655,25.631 24.482,21.944A9.129,9.129 0,0 0,28.455 14.593,8.944 8.944,0 0,0 24.482,7.304a112.065,112.065 0,0 0,-12.6 -6.739,8.77 8.77,0 0,0 -11.871,8.159c0.027,8.558 0.132,1.774 -0,12A8.778,8.778 0,0 0,8.74 29.504Z">
+        <aapt:attr name="android:fillColor">
+            <gradient android:endX="27.402552" android:endY="0.8302472"
+                android:startX="7.406022" android:startY="26.991879" android:type="linear">
+                <item android:color="#FFE21072" android:offset="0"/>
+                <item android:color="#FFFF4D00" android:offset="0.468"/>
+                <item android:color="#FFFFAA00" android:offset="1"/>
+            </gradient>
+        </aapt:attr>
+    </path>
+</vector>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="end|center"
+    app:layout_anchorGravity="right">
+
+
+    <org.amphiaraus.roundedlayout.RoundedLayout
+        android:id="@+id/round_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        app:rlRoundedCornerRadius="10dp"
+        app:rlRoundingBorderWidth="0dp"
+        app:rlRoundingElevation="0dp">
+
+
+        <LinearLayout
+            android:id="@+id/search_linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:background="?attr/selectableItemBackground"
+            android:gravity="end"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:visibility="gone"
+                android:id="@+id/search_imageView_mic"
+                android:layout_width="@dimen/search_icon_48"
+                android:layout_height="match_parent"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:contentDescription="@string/search_app_name"
+                android:scaleType="center" />
+
+            <ImageView
+                android:visibility="gone"
+                android:id="@+id/search_imageView_menu"
+                android:layout_width="@dimen/search_icon_24"
+                android:layout_height="match_parent"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:contentDescription="@string/search_app_name"
+                android:scaleType="center" />
+
+
+            <ir.sinadalvand.searchview.widget.SearchEditText
+                android:layout_marginLeft="20dp"
+                android:id="@+id/search_searchEditText"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@null"
+                android:ellipsize="end"
+                android:gravity="start|center_vertical"
+                android:maxLines="1"
+                android:windowSoftInputMode="stateAlwaysHidden"
+                android:privateImeOptions="nm"
+                android:imeOptions="actionSearch|flagNoExtractUi"
+                android:inputType="text|textNoSuggestions"
+                android:textSize="@dimen/search_text_14" />
+
+            <ImageView
+                android:id="@+id/search_imageView_logo"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:padding="10dp"
+                android:contentDescription="@string/search_app_name"
+                android:scaleType="center"
+                tools:src="@drawable/ic_search" />
+
+        </LinearLayout>
+
+    </org.amphiaraus.roundedlayout.RoundedLayout>
+
+
+</RelativeLayout>

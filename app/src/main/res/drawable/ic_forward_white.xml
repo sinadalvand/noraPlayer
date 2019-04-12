@@ -1,0 +1,15 @@
+<!--
+  ~  Copyright (c)  2018 by Sina Dalvand
+  ~  All Rights Reserved.
+  ~  Licensed under the Apache License, Version 2.0 (the "License");
+  ~  All Classes & Files Created for CoolPlayer project
+  ~  This file created by LOGAN Username
+  -->
+
+<vector android:height="25dp" android:viewportHeight="19.646"
+    android:viewportWidth="24.894" android:width="25dp"
+    xmlns:aapt="http://schemas.android.com/aapt" xmlns:android="http://schemas.android.com/apk/res/android">
+    <path android:pathData="M10.978,0L10.978,19.646L24.894,9.823ZM13.405,9.823l-13.4,-9.823L0.005,19.646Z" android:fillColor="#FFFF">
+
+    </path>
+</vector>

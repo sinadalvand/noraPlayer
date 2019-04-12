@@ -1,0 +1,8 @@
+<resources>
+    <string name="allow">پذیرش</string>
+    <string name="later">بعداً</string>
+    <string name="foo_permission">درخواست مجوز تست</string>
+    <string name="foo_persmission_des">برای دسترسی به موراد نا مشخص به دسترسی تست لازم است</string>
+    <string name="settings_description">دسترسی ها را انتخاب کرده و دسرسی لازم را فعال کنید</string>
+    <string name="dontShow">بار دیگر نمایش نده</string>
+</resources>

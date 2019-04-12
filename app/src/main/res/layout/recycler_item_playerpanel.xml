@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~  Copyright (c)  2018 by Sina Dalvand
+  ~  All Rights Reserved.
+  ~  Licensed under the Apache License, Version 2.0 (the "License");
+  ~  All Classes & Files Created for CoolPlayer project
+  ~  This file created by LOGAN Username
+  -->
+
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/landing_song_item_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="5dp"
+    app:layout_constrainedWidth="true"
+    app:layout_constraintHeight_percent="0.15">
+
+
+    <ImageView
+        android:id="@+id/player_panel_recycler_handel"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="5dp"
+        android:adjustViewBounds="true"
+        android:padding="5dp"
+        android:scaleType="center"
+        android:src="@drawable/ic_handel_24dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintWidth_percent="0.12" />
+
+
+    <ImageView
+        android:id="@+id/player_panel_recycler_remove"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="8dp"
+        android:padding="10dp"
+        android:src="@drawable/ic_remove_24dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/player_panel_recycler_title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:text="Come and get it"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toStartOf="@+id/player_panel_recycler_remove"
+        app:layout_constraintStart_toEndOf="@+id/player_panel_recycler_handel"
+        app:layout_constraintTop_toTopOf="@+id/player_panel_recycler_handel" />
+
+
+    <TextView
+        android:id="@+id/player_panel_recycler_singer"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:alpha="0.7"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:text="Selena Gomez"
+        android:textSize="13sp"
+        app:layout_constraintEnd_toStartOf="@+id/player_panel_recycler_remove"
+        app:layout_constraintStart_toEndOf="@+id/player_panel_recycler_handel"
+        app:layout_constraintTop_toBottomOf="@+id/player_panel_recycler_title" />
+
+</android.support.constraint.ConstraintLayout>

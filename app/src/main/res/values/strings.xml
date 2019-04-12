@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Nora Player</string>
+    <string name="albums">Albums</string>
+    <string name="songs">Songs</string>
+    <string name="artist">Artist</string>
+    <string name="device_admin_explanation">We need this permission for keep safe your app from unistall by another user</string>
+</resources>
